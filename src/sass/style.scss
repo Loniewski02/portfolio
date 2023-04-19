@@ -1,0 +1,72 @@
+@use './colors' as *;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 1.6rem;
+	background-color: $black;
+}
+
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1110px;
+	width: 100%;
+}
+
+.nav {
+	padding: 1.3em 0 2em;
+	background-color: transparent;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__heading {
+		color: $white;
+		font-size: 2.4rem;
+		line-height: 32px;
+		font-weight: 700;
+	}
+
+	&__box {
+		display: flex;
+		margin-top: 1.3em;
+		gap: 1.6em;
+
+		&-link {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+
+			img {
+				width: 20px;
+			}
+		}
+	}
+}
+
+@media (min-width: 375px) {
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1440px) {
+}
