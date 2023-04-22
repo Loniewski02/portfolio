@@ -74,6 +74,7 @@ body {
 }
 
 .header {
+	padding-bottom: 9.2rem;
 	position: relative;
 	overflow: hidden;
 
@@ -184,6 +185,31 @@ body {
 	}
 }
 
+.skills {
+	padding: 2.5em 1em;
+
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5em;
+	}
+
+	&__box {
+		text-align: center;
+
+		&-name {
+			color: $white;
+			font-size: 3.2rem;
+		}
+
+		&-desc {
+			margin-top: 0.5rem;
+			color: $light-gray;
+		}
+	}
+}
+
 @media (min-width: 375px) {
 }
 @media (min-width: 576px) {
@@ -206,10 +232,6 @@ body {
 			gap: 2em;
 
 			&-link {
-				&:last-child {
-					margin-right: 1em;
-				}
-
 				img {
 					width: 24px;
 				}
@@ -269,18 +291,35 @@ body {
 			}
 		}
 	}
+
+	.skills {
+		padding: 3.2em 2em;
+		&__boxes {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			column-gap: 0;
+			row-gap: 3.2em;
+		}
+
+		&__box {
+			text-align: left;
+			width: 50%;
+
+			&-name {
+				font-size: 4.8rem;
+			}
+
+			&-desc {
+				margin-top: 1.4rem;
+				font-size: 1.8rem;
+			}
+		}
+	}
 }
 @media (min-width: 992px) {
 	.nav {
 		padding: 2.5em 2em;
-
-		&__box {
-			&-link {
-				&:last-child {
-					margin-right: 2em;
-				}
-			}
-		}
 	}
 
 	.header {
@@ -315,9 +354,24 @@ body {
 			margin-top: 2em;
 			max-width: 600px;
 
+			&-title {
+				span {
+					&::after {
+						bottom: 4px;
+						height: 6px;
+					}
+				}
+			}
+
 			&-text {
 				margin: 2.4em 0 3.7em;
 			}
+		}
+	}
+
+	.skills {
+		&__box {
+			width: 30%;
 		}
 	}
 }
@@ -329,6 +383,10 @@ body {
 		&__hero {
 			&-rings {
 				left: -1360px;
+			}
+
+			&-profile {
+				right: 0;
 			}
 		}
 
