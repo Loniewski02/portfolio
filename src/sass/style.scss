@@ -369,13 +369,13 @@ body {
 			max-height: 720px;
 
 			&-rings {
-				top: 8em;
+				top: 8.5em;
 				left: -1200px;
 			}
 
 			&-circle {
 				bottom: 10%;
-				transform: translateX(-245%);
+				transform: translateX(-320%);
 			}
 
 			&-profile {
@@ -386,7 +386,7 @@ body {
 		}
 
 		&__info {
-			margin-top: 2em;
+			margin-bottom: 0em;
 			max-width: 600px;
 
 			&-title {
@@ -406,12 +406,12 @@ body {
 
 	.skills {
 		padding: 0 2em 8.8em;
-		background-position: 80vw 90%;
+		background-position: 80vw 80%;
 		&__line {
 			margin-bottom: 4.5em;
 		}
 		&__box {
-			width: 30%;
+			width: 31%;
 		}
 	}
 }
@@ -428,7 +428,7 @@ body {
 	.header {
 		&__hero {
 			&-rings {
-				left: -1360px;
+				left: -1365px;
 			}
 
 			&-profile {
