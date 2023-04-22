@@ -74,7 +74,6 @@ body {
 }
 
 .header {
-	padding-bottom: 9.2rem;
 	position: relative;
 	overflow: hidden;
 
@@ -113,7 +112,7 @@ body {
 	}
 
 	&__info {
-		padding: 0 1em;
+		padding: 0 1em 8rem;
 		text-align: center;
 
 		&-title {
@@ -146,7 +145,7 @@ body {
 
 		&-link {
 			position: relative;
-			padding-bottom: 1rem;
+			padding-bottom: 1em;
 			font-size: 1.6rem;
 			color: $white;
 			font-weight: bold;
@@ -186,7 +185,25 @@ body {
 }
 
 .skills {
-	padding: 2.5em 1em;
+	padding: 0 1em 5em;
+	overflow: hidden;
+	background-image: url('../img/icons/pattern-rings.svg');
+	background-repeat: no-repeat;
+	background-position: 50vw 97%;
+
+	&__line {
+		width: 100%;
+		height: 1px;
+		background-color: $white;
+
+		&--top {
+			margin: 0 0 4rem;
+		}
+
+		&--bottom {
+			margin: 4rem 0 0;
+		}
+	}
 
 	&__boxes {
 		display: flex;
@@ -240,7 +257,8 @@ body {
 	}
 
 	.header {
-		padding: 0 2em 6rem 2em;
+		padding: 0 2em 6rem;
+		min-height: 600px;
 
 		.wrapper {
 			display: flex;
@@ -259,7 +277,7 @@ body {
 			}
 
 			&-circle {
-				right: 2em;
+				right: -2em;
 			}
 
 			&-profile {
@@ -274,6 +292,7 @@ body {
 		}
 
 		&__info {
+			margin-bottom: 1.2em;
 			padding: 0;
 			text-align: left;
 			max-width: 44.5rem;
@@ -293,7 +312,23 @@ body {
 	}
 
 	.skills {
-		padding: 3.2em 2em;
+		padding: 0 2em 6.3em;
+		background-position: 72vw 95%;
+
+		&__line {
+			width: 100%;
+			height: 1px;
+			background-color: $white;
+
+			&--top {
+				margin: 0 0 5.2rem;
+			}
+
+			&--bottom {
+				display: none;
+			}
+		}
+
 		&__boxes {
 			flex-direction: row;
 			flex-wrap: wrap;
@@ -323,7 +358,7 @@ body {
 	}
 
 	.header {
-		padding: 0 2em 8rem;
+		padding: 0 2em 10.4rem;
 
 		.wrapper {
 			align-items: center;
@@ -370,6 +405,11 @@ body {
 	}
 
 	.skills {
+		padding: 0 2em 8.8em;
+		background-position: 80vw 90%;
+		&__line {
+			margin-bottom: 4.5em;
+		}
 		&__box {
 			width: 30%;
 		}
@@ -377,9 +417,15 @@ body {
 }
 
 @media (min-width: 1200px) {
-	.header {
-		padding: 0 2em 10.4rem;
+	.nav {
+		&__box-link {
+			&:last-child {
+				padding-right: 2em;
+			}
+		}
+	}
 
+	.header {
 		&__hero {
 			&-rings {
 				left: -1360px;
