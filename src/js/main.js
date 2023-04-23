@@ -7,7 +7,7 @@ fetch('data.json')
 			projectsBoxes.innerHTML += `
 			<div class="projects__box">
 			<div class="projects__box-img">
-				<img src="${data[i].pathSmall}" alt="">
+				<img src="${checkWidth(data, i)}" alt="">
 				<div class="projects__box-img-links">
 				<a href="${data[i].live}" data-text="view project" class="projects__box-img-link">view project</a>
 				<a href="${data[i].code}" data-text="view code" class="projects__box-img-link">view code</a>
@@ -24,10 +24,12 @@ fetch('data.json')
 	})
 	.catch(error => console.error(error));
 
-projectsBoxes.addEventListener('click', e => {
-	const img = e.target.closest('.projects__box-img');
-	if (img) {
-		const projectBox = img.closest('.projects__box');
-		projectBox.classList.toggle('projects__box--active');
+const checkWidth = (data, i) => {
+	if (window.innerWidth < 768) {
+		return data[i].pathSmall;
 	}
-});
+
+	if (window.innerWidth >= 768) {
+		return data[i].pathLarge;
+	}
+};

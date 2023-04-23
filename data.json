@@ -1,7 +1,7 @@
 [
 	{
 		"pathLarge": "dist/img/project-1-large.webp",
-		"pathSmall": "dist/img/project-1-large.webp",
+		"pathSmall": "dist/img/project-1-small.webp",
 		"title": "design portfolio",
 		"builtWith": "html css",
 		"live": "#",
@@ -9,7 +9,7 @@
 	},
 	{
 		"pathLarge": "dist/img/project-2-large.webp",
-		"pathSmall": "dist/img/project-2-large.webp",
+		"pathSmall": "dist/img/project-2-small.webp",
 		"title": "e-learning landing page",
 		"builtWith": "html css",
 		"live": "#",
@@ -17,7 +17,7 @@
 	},
 	{
 		"pathLarge": "dist/img/project-3-large.webp",
-		"pathSmall": "dist/img/project-3-large.webp",
+		"pathSmall": "dist/img/project-3-small.webp",
 		"title": "todo web app",
 		"builtWith": "html css javascript",
 		"live": "#",
@@ -25,7 +25,7 @@
 	},
 	{
 		"pathLarge": "dist/img/project-4-large.webp",
-		"pathSmall": "dist/img/project-4-large.webp",
+		"pathSmall": "dist/img/project-4-small.webp",
 		"title": "entertainment web app",
 		"builtWith": "html css javascript",
 		"live": "#",
@@ -33,7 +33,7 @@
 	},
 	{
 		"pathLarge": "dist/img/project-5-large.webp",
-		"pathSmall": "dist/img/project-5-large.webp",
+		"pathSmall": "dist/img/project-5-small.webp",
 		"title": "memory game",
 		"builtWith": "html css javascript",
 		"live": "#",
@@ -41,7 +41,7 @@
 	},
 	{
 		"pathLarge": "dist/img/project-6-large.webp",
-		"pathSmall": "dist/img/project-6-large.webp",
+		"pathSmall": "dist/img/project-6-small.webp",
 		"title": "art gallery showcase",
 		"builtWith": "html css javascript",
 		"live": "#",
