@@ -1,6 +1,6 @@
 const projectsBoxes = document.querySelector('.projects__boxes');
 
-fetch('../dist/js/data.json')
+fetch('data.json')
 	.then(response => response.json())
 	.then(data => {
 		for (let i = 0; i < data.length; i++) {
