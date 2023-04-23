@@ -27,6 +27,45 @@ body {
 	width: 100%;
 }
 
+@mixin linkStyles {
+	position: relative;
+	padding-bottom: 0.8em;
+	font-size: 1.6rem;
+	color: $white;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2.3px;
+	background-color: transparent;
+	cursor: pointer;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background-color: $green;
+	}
+
+	&::before {
+		content: attr(data-text);
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		width: 100%;
+		height: 0;
+		color: $green;
+		transition: height 0.3s;
+		overflow: hidden;
+	}
+
+	&:hover::before {
+		height: 100%;
+	}
+}
+
 .nav {
 	position: absolute;
 	top: 0;
@@ -144,42 +183,7 @@ body {
 		}
 
 		&-link {
-			position: relative;
-			padding-bottom: 1em;
-			font-size: 1.6rem;
-			color: $white;
-			font-weight: bold;
-			text-decoration: none;
-			text-transform: uppercase;
-			letter-spacing: 2.3px;
-			background-color: $black;
-			cursor: pointer;
-
-			&::after {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				height: 2px;
-				background-color: $green;
-			}
-
-			&::before {
-				content: attr(data-text);
-				position: absolute;
-				bottom: 0px;
-				left: 0;
-				width: 100%;
-				height: 0;
-				color: $green;
-				transition: height 0.3s;
-				overflow: hidden;
-			}
-
-			&:hover::before {
-				height: 100%;
-			}
+			@include linkStyles;
 		}
 	}
 }
@@ -223,6 +227,73 @@ body {
 		&-desc {
 			margin-top: 0.5rem;
 			color: $light-gray;
+		}
+	}
+}
+
+.projects {
+	padding: 0 1em;
+
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2.5em;
+
+		&-title {
+			color: $white;
+			font-size: 4rem;
+			letter-spacing: -1px;
+			line-height: 1em;
+		}
+
+		&-link {
+			@include linkStyles;
+		}
+	}
+
+	&__boxes {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 5.2rem;
+		place-items: center;
+	}
+
+	&__box {
+		position: relative;
+		min-height: 398px;
+
+		&-img {
+			margin-bottom: 1.3em;
+			width: 100%;
+			max-width: 540px;
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: scale(1.02);
+			}
+		}
+
+		&-title {
+			font-size: 2.4rem;
+			color: $white;
+			text-transform: uppercase;
+		}
+
+		&-built-with {
+			margin: 0.4em 0 1.2em;
+			font-size: 1.8rem;
+			color: $light-gray;
+			text-transform: uppercase;
+			word-spacing: 1em;
+		}
+
+		&-link {
+			@include linkStyles;
+
+			&--first {
+				margin-right: 2em;
+			}
 		}
 	}
 }
@@ -313,7 +384,7 @@ body {
 
 	.skills {
 		padding: 0 2em 6.3em;
-		background-position: 72vw 95%;
+		background-position: 72vw 91%;
 
 		&__line {
 			width: 100%;
@@ -334,7 +405,7 @@ body {
 			flex-wrap: wrap;
 			justify-content: space-between;
 			column-gap: 0;
-			row-gap: 3.2em;
+			row-gap: 3.3em;
 		}
 
 		&__box {
@@ -349,6 +420,29 @@ body {
 				margin-top: 1.4rem;
 				font-size: 1.8rem;
 			}
+		}
+	}
+
+	.projects {
+		padding: 0 2em;
+
+		&__heading {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 2.5em;
+
+			&-title {
+				color: $white;
+				font-size: 7.2rem;
+				letter-spacing: -2px;
+			}
+		}
+
+		&__boxes {
+			grid-template-columns: 1fr 1fr;
+			column-gap: 3rem;
+			row-gap: 7.2rem;
 		}
 	}
 }
@@ -375,7 +469,7 @@ body {
 
 			&-circle {
 				bottom: 10%;
-				transform: translateX(-320%);
+				transform: translateX(-300%);
 			}
 
 			&-profile {
@@ -414,6 +508,44 @@ body {
 			width: 31%;
 		}
 	}
+
+	.projects {
+		&__heading {
+			margin-bottom: 5em;
+
+			&-title {
+				font-size: 8.8rem;
+				letter-spacing: -2.5px;
+			}
+		}
+
+		&__boxes {
+			row-gap: 6.9rem;
+		}
+
+		&__box {
+			position: relative;
+			max-height: 487px;
+
+			&-img {
+				cursor: pointer;
+			}
+
+			&-built-with {
+				margin: 0;
+			}
+
+			&-links {
+				display: none;
+			}
+
+			&-link {
+				&--first {
+					margin-right: 0;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -428,7 +560,11 @@ body {
 	.header {
 		&__hero {
 			&-rings {
-				left: -1365px;
+				left: -1370px;
+			}
+
+			&-circle {
+				transform: translateX(-320%);
 			}
 
 			&-profile {

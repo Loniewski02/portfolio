@@ -70,8 +70,6 @@ function startBrowserSync(done) {
 			baseDir: './',
 		},
 		online: true,
-		tunnel: 'milosz',
-		logLevel: 'debug',
 	});
 
 	done();
