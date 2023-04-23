@@ -264,13 +264,23 @@ body {
 		min-height: 398px;
 
 		&-img {
+			position: relative;
 			margin-bottom: 1.3em;
-			width: 100%;
-			max-width: 540px;
-			transition: transform 0.3s;
+			overflow: hidden;
 
-			&:hover {
-				transform: scale(1.02);
+			img {
+				display: block;
+				width: 100%;
+				max-width: 540px;
+				transition: transform 0.3s;
+
+				&:hover {
+					transform: scale(1.02);
+				}
+			}
+
+			&-links {
+				display: none;
 			}
 		}
 
@@ -446,6 +456,7 @@ body {
 		}
 	}
 }
+
 @media (min-width: 992px) {
 	.nav {
 		padding: 2.5em 2em;
@@ -527,22 +538,44 @@ body {
 			position: relative;
 			max-height: 487px;
 
+			&--active {
+				.projects__box-img {
+					&-links {
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						gap: 3em;
+						background-color: rgba(0, 0, 0, 0.75);
+					}
+				}
+			}
+
 			&-img {
-				cursor: pointer;
+				max-height: 400px;
+				overflow: hidden;
+
+				img {
+					height: 100%;
+					cursor: pointer;
+				}
+
+				&-link {
+					@include linkStyles;
+				}
 			}
 
 			&-built-with {
-				margin: 0;
+				margin-bottom: 0;
 			}
 
 			&-links {
 				display: none;
-			}
-
-			&-link {
-				&--first {
-					margin-right: 0;
-				}
 			}
 		}
 	}
