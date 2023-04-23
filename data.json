@@ -1,47 +1,47 @@
 [
 	{
-		"pathLarge": "/dist/img/project-1-large.webp",
-		"pathSmall": "/dist/img/project-1-large.webp",
+		"pathLarge": "dist/img/project-1-large.webp",
+		"pathSmall": "dist/img/project-1-large.webp",
 		"title": "design portfolio",
 		"builtWith": "html css",
 		"live": "#",
 		"code": "#"
 	},
 	{
-		"pathLarge": "/dist/img/project-2-large.webp",
-		"pathSmall": "/dist/img/project-2-large.webp",
+		"pathLarge": "dist/img/project-2-large.webp",
+		"pathSmall": "dist/img/project-2-large.webp",
 		"title": "e-learning landing page",
 		"builtWith": "html css",
 		"live": "#",
 		"code": "#"
 	},
 	{
-		"pathLarge": "/dist/img/project-3-large.webp",
-		"pathSmall": "/dist/img/project-3-large.webp",
+		"pathLarge": "dist/img/project-3-large.webp",
+		"pathSmall": "dist/img/project-3-large.webp",
 		"title": "todo web app",
 		"builtWith": "html css javascript",
 		"live": "#",
 		"code": "#"
 	},
 	{
-		"pathLarge": "/dist/img/project-4-large.webp",
-		"pathSmall": "/dist/img/project-4-large.webp",
+		"pathLarge": "dist/img/project-4-large.webp",
+		"pathSmall": "dist/img/project-4-large.webp",
 		"title": "entertainment web app",
 		"builtWith": "html css javascript",
 		"live": "#",
 		"code": "#"
 	},
 	{
-		"pathLarge": "/dist/img/project-5-large.webp",
-		"pathSmall": "/dist/img/project-5-large.webp",
+		"pathLarge": "dist/img/project-5-large.webp",
+		"pathSmall": "dist/img/project-5-large.webp",
 		"title": "memory game",
 		"builtWith": "html css javascript",
 		"live": "#",
 		"code": "#"
 	},
 	{
-		"pathLarge": "/dist/img/project-6-large.webp",
-		"pathSmall": "/dist/img/project-6-large.webp",
+		"pathLarge": "dist/img/project-6-large.webp",
+		"pathSmall": "dist/img/project-6-large.webp",
 		"title": "art gallery showcase",
 		"builtWith": "html css javascript",
 		"live": "#",
