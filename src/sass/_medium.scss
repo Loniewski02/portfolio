@@ -82,18 +82,12 @@
 		padding: 0 2em 6.3em;
 		background-position: 72vw 91%;
 
-		&__line {
-			width: 100%;
-			height: 1px;
-			background-color: $white;
+		&__hero {
+			transform: translate(70%, 50%);
+		}
 
-			&--top {
-				margin: 0 0 5.2rem;
-			}
-
-			&--bottom {
-				display: none;
-			}
+		.line--bottom {
+			display: none;
 		}
 
 		&__boxes {
@@ -102,6 +96,7 @@
 			justify-content: space-between;
 			column-gap: 0;
 			row-gap: 3.4em;
+			padding: 5.2rem 0 0;
 		}
 
 		&__box {
@@ -120,7 +115,7 @@
 	}
 
 	.projects {
-		padding: 0 2em;
+		padding: 0 2em 6.2em;
 
 		&__heading {
 			display: flex;
@@ -139,6 +134,65 @@
 			grid-template-columns: 1fr 1fr;
 			column-gap: 3rem;
 			row-gap: 7.2rem;
+		}
+	}
+
+	.footer {
+		padding: 3.7em 2em 2.5em;
+
+		&__contact {
+			.wrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			&-hero {
+				transform: translate(-77%, 60%);
+			}
+
+			&-info {
+				margin-bottom: 3em;
+				max-width: 445px;
+
+				&-title {
+					font-size: 7.2rem;
+				}
+
+				&-text {
+					font-size: 1.8rem;
+					line-height: 28px;
+				}
+			}
+
+			&-form {
+				width: 445px;
+			}
+		}
+
+		&__socials {
+			padding-top: 1.9em;
+
+			.wrapper {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			&-heading {
+				font-size: 3.2rem;
+			}
+
+			&-box {
+				margin-top: 0;
+				gap: 2em;
+
+				&-link {
+					img {
+						width: 24px;
+					}
+				}
+			}
 		}
 	}
 }

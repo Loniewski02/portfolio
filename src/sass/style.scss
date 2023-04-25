@@ -12,7 +12,7 @@
 
 html {
 	font-size: 62.5%;
-	scroll-behavior: smooth;
+	// scroll-behavior: smooth;
 }
 
 body {
@@ -147,15 +147,25 @@ body {
 .skills {
 	padding: 0 1em 5em;
 	overflow: hidden;
-	background-image: url('../img/icons/pattern-rings.svg');
-	background-repeat: no-repeat;
-	background-position: 50vw 97%;
+
+	&__hero {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		transform: translate(68%, 50%);
+		width: 530px;
+		height: 129px;
+		background-image: url('../img/icons/pattern-rings.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 
 	&__boxes {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 1.5em;
+		padding: 4rem 0;
 	}
 
 	&__box {
@@ -251,20 +261,31 @@ body {
 }
 
 .footer {
+	position: relative;
 	padding: 3.7em 1em;
 	background-color: $dark-gray;
 
-	.line {
-		margin: 5.8em 0 3em;
-	}
-
 	&__contact {
+		padding-bottom: 5.8em;
+
+		&-hero {
+			position: absolute;
+			bottom: 5px;
+			left: 0;
+			transform: translateX(-70%);
+			width: 530px;
+			height: 129px;
+			background-image: url('../img/icons/pattern-rings.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
 		&-info {
 			margin-bottom: 3.1em;
 			text-align: center;
 
 			&-title {
-				margin-bottom: 0.5em;
+				margin-bottom: 2rem;
 				color: $white;
 				font-size: 4rem;
 				line-height: 1em;
@@ -312,6 +333,8 @@ body {
 			textarea {
 				min-width: 100%;
 				max-width: 100%;
+				min-height: 107px;
+				height: 107px;
 				resize: vertical;
 			}
 
@@ -325,6 +348,7 @@ body {
 	}
 
 	&__socials {
+		padding-top: 3em;
 		text-align: center;
 
 		&-heading {
