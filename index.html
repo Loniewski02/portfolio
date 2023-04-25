@@ -53,7 +53,7 @@
   <main class="main">
     <section class="skills">
       <div class="wrapper">
-        <div class="skills__line skills__line--top"></div>
+        <div class="line line--top"></div>
         <div class="skills__boxes">
           <div class="skills__box">
             <h3 class="skills__box-name">HTML</h3>
@@ -80,7 +80,7 @@
             <p class=" skills__box-desc">3 Years Experience</p>
           </div>
         </div>
-        <div class="skills__line skills__line--bottom"></div>
+        <div class="line line--bottom"></div>
       </div>
     </section>
 
@@ -97,39 +97,43 @@
 
   <footer id="contact" class="footer">
     <div class="wrapper">
-      <div class="footer__contact">
-
+      <section div class="footer__contact">
         <div class="footer__contact-info">
           <h2 class="footer__contact-info-title">Contact</h2>
           <p class="footer__contact-info-text">I would love to hear about your project and how I could help. Please
             fill in the form, and I’ll get back to you as soon as possible.</p>
         </div>
-
         <form action="" class="footer__contact-form">
-          <label for="name">name</label>
-          <input type="text" id="name">
-          <label for="email">email</label>
-          <input type="email" id="email">
-          <label for="msg">message</label>
-          <textarea id="msg" cols="30" rows="10"></textarea>
-          <input type="submit" value="send message">
+          <div class="footer__contact-form-box">
+            <label for="name">name</label>
+            <input type="text" id="name">
+          </div>
+          <div class="footer__contact-form-box">
+            <label for="email">email</label>
+            <input type="email" id="email">
+          </div>
+          <div class="footer__contact-form-box">
+            <label for="msg">message</label>
+            <textarea id="msg" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit" data-text="send message">send message</button>
         </form>
-      </div>
+      </section>
       <div class="line"></div>
-      <div class="footer__bottom">
-        <p href="#" class="footer__bottom-heading">adamkeyes</p>
-        <div class="footer__bottom-socials">
-          <a href="#" aria-label="GitHub profile" class="footer__bottom-socials-link"><img
+      <section class="footer__socials">
+        <h2 class="footer__socials-heading">adamkeyes</h2>
+        <div class="footer__socials-box">
+          <a href="#" aria-label="GitHub profile" class="footer__socials-box-link"><img
               src="./dist/img/icons/icon-github.svg" alt="">
           </a>
-          <a href="#" aria-label="Frontend mentor profile" class="footer__bottom-socials-link"><img
-              src="./dist/img/icons/icon-frontend-mentor.svg" alt=""></a>
-          <a href="#" aria-label="linkedin profile" class="footer__bottom-socials-link"><img
-              src="./dist/img/icons/icon-linkedin.svg" alt=""></a>
-          <a href="#" aria-label="twitter profile" class="footer__bottom-socials-link"><img
-              src="./dist/img/icons/icon-twitter.svg" alt=""></a>
+          <a href="#" aria-label="Frontend mentor profile" class="footer__socials-box-link">
+            <img src="./dist/img/icons/icon-frontend-mentor.svg" alt=""></a>
+          <a href="#" aria-label="linkedin profile" class="footer__socials-box-link">
+            <img src="./dist/img/icons/icon-linkedin.svg" alt=""></a>
+          <a href="#" aria-label="twitter profile" class="footer__socials-box-link">
+            <img src="./dist/img/icons/icon-twitter.svg" alt=""></a>
         </div>
-      </div>
+      </section>
     </div>
   </footer>
   <script type="module" src="./dist/js/main.min.js"></script>

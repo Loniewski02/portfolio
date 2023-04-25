@@ -1,0 +1,170 @@
+@media (min-width: 992px) {
+	.nav {
+		padding: 2.5em 2em;
+	}
+
+	.header {
+		padding: 0 2em 10.4rem;
+
+		.wrapper {
+			align-items: center;
+		}
+
+		&__hero {
+			height: 100vh;
+			max-height: 720px;
+
+			&-rings {
+				top: 8.5em;
+				left: -1200px;
+			}
+
+			&-circle {
+				bottom: 10%;
+				transform: translateX(-300%);
+			}
+
+			&-profile {
+				width: auto;
+				max-width: 445px;
+				content: url('../img/image-profile-desktop.webp');
+			}
+		}
+
+		&__info {
+			margin-bottom: 0em;
+			max-width: 600px;
+
+			&-title {
+				span {
+					&::after {
+						bottom: 4px;
+						height: 6px;
+					}
+				}
+			}
+
+			&-text {
+				margin: 2.4em 0 3.7em;
+			}
+		}
+	}
+
+	.skills {
+		padding: 0 2em 8.8em;
+		background-position: 80vw 75%;
+
+		&__line {
+			margin-bottom: 4.5em;
+		}
+
+		&__box {
+			width: 30.5%;
+		}
+	}
+
+	.projects {
+		&__heading {
+			margin-bottom: 5em;
+
+			&-title {
+				font-size: 8.8rem;
+				letter-spacing: -2.5px;
+			}
+		}
+
+		&__boxes {
+			row-gap: 7rem;
+		}
+
+		&__box {
+			position: relative;
+			max-height: 487px;
+
+			&-img {
+				max-height: 400px;
+				overflow: hidden;
+
+				&:hover &-links {
+					height: 100%;
+				}
+
+				&:hover &-link {
+					opacity: 1;
+				}
+
+				img {
+					height: 100%;
+					cursor: pointer;
+				}
+
+				&-links {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					left: 0;
+					width: 100%;
+					height: 0;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					gap: 3em;
+					background-color: rgba(0, 0, 0, 0.75);
+					transition: height 0.5s;
+					cursor: pointer;
+				}
+
+				&-link {
+					@include linkStyles;
+					transition: opacity 0.3s;
+					opacity: 0;
+				}
+			}
+
+			&-built-with {
+				margin-bottom: 0;
+			}
+
+			&-links {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav {
+		&__box-link {
+			&:last-child {
+				padding-right: 2em;
+			}
+		}
+	}
+
+	.header {
+		&__hero {
+			&-rings {
+				left: -1370px;
+			}
+
+			&-circle {
+				transform: translateX(-320%);
+			}
+
+			&-profile {
+				right: 0;
+			}
+		}
+
+		&__info {
+			margin-top: 4em;
+			max-width: 706px;
+
+			&-title {
+				font-size: 8.8rem;
+				letter-spacing: -2.5px;
+			}
+		}
+	}
+}
