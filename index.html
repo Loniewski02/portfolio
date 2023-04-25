@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./dist/css/style.min.css">
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
@@ -18,21 +18,20 @@
 
   <nav class="nav">
     <div class="wrapper">
-      <p href="#" class="nav__heading">adamkeyes</p>
+      <p href="#" class="nav__heading" data-aos="zoom-out-down" data-aos-delay="100">adamkeyes</p>
       <div class="nav__box">
-        <a href="#" aria-label="GitHub profile" class="nav__box-link"><img src="./dist/img/icons/icon-github.svg"
-            alt="">
+        <a href="#" aria-label="GitHub profile" class="nav__box-link" data-aos="zoom-out-down" data-aos-delay="200"><img
+            src="./dist/img/icons/icon-github.svg" alt="">
         </a>
-        <a href="#" aria-label="Frontend mentor profile" class="nav__box-link"><img
-            src="./dist/img/icons/icon-frontend-mentor.svg" alt=""></a>
-        <a href="#" aria-label="linkedin profile" class="nav__box-link"><img src="./dist/img/icons/icon-linkedin.svg"
-            alt=""></a>
-        <a href="#" aria-label="twitter profile" class="nav__box-link"><img src="./dist/img/icons/icon-twitter.svg"
-            alt=""></a>
+        <a href="#" aria-label="Frontend mentor profile" class="nav__box-link" data-aos="zoom-out-down"
+          data-aos-delay="300"><img src="./dist/img/icons/icon-frontend-mentor.svg" alt=""></a>
+        <a href="#" aria-label="linkedin profile" class="nav__box-link" data-aos="zoom-out-down"
+          data-aos-delay="400"><img src="./dist/img/icons/icon-linkedin.svg" alt=""></a>
+        <a href="#" aria-label="twitter profile" class="nav__box-link" data-aos="zoom-out-down"
+          data-aos-delay="500"><img src="./dist/img/icons/icon-twitter.svg" alt=""></a>
       </div>
     </div>
   </nav>
-
 
   <header class="header">
     <div class="wrapper">
@@ -42,8 +41,10 @@
         <div class="header__hero-circle"></div>
       </div>
       <div class="header__info">
-        <h1 class="header__info-title">Nice to meet you! I'm <span>Adam Keyes</span>.</h1>
-        <p class="header__info-text">Based in the UK, I'm a front-end developer passionate about building accessible web
+        <h1 class="header__info-title focus-in-expand">Nice to meet you! I'm <span>Adam Keyes</span>.</h1>
+        <p class="header__info-text paragraph-styles focus-in-expand">Based in the UK, I'm a front-end developer
+          passionate about
+          building accessible web
           apps that users love.</p>
         <a href="#contact" data-text="contact me" class="header__info-link">contact me</a>
       </div>
@@ -56,27 +57,27 @@
         <div class="skills__hero"></div>
         <div class="line line--top"></div>
         <div class="skills__boxes">
-          <div class="skills__box">
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
             <h3 class="skills__box-name">HTML</h3>
             <p class="skills__box-desc">4 Years Experience</p>
           </div>
-          <div class="skills__box">
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
             <h3 class="skills__box-name">CSS</h3>
             <p class="skills__box-desc">4 Years Experience</p>
           </div>
-          <div class="skills__box">
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
             <h3 class="skills__box-name">Javascript</h3>
             <p class="skills__box-desc">4 Years Experience</p>
           </div>
-          <div class="skills__box">
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
             <h3 class="skills__box-name">Accessibility</h3>
             <p class="skills__box-desc">4 Years Experience</p>
           </div>
-          <div class="skills__box">
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
             <h3 class="skills__box-name">React</h3>
             <p class="skills__box-desc">3 Years Experience</p>
           </div>
-          <div class="skills__box">
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="600">
             <h3 class="skills__box-name">Sass</h3>
             <p class=" skills__box-desc">3 Years Experience</p>
           </div>
@@ -102,32 +103,47 @@
         <div class="footer__contact-hero"></div>
         <div class="footer__contact-info">
           <h2 class="footer__contact-info-title">Contact</h2>
-          <p class="footer__contact-info-text">I would love to hear about your project and how I could help. Please
-            fill in the form, and I’ll get back to you as soon as possible.</p>
+          <p class="footer__contact-info-text paragraph-styles">I would love to hear about your project and how I could
+            help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
         </div>
         <form action="" class="footer__contact-form">
           <div class="footer__contact-form-box">
-            <label for="name">name</label>
-            <input type="text" id="name">
+            <label class="label" for="name">name</label>
+            <input class="input" type="text" id="name">
+            <p class="error-info">error</p>
+            <div class="error-ico">
+              <div class="error-ico-sign"></div>
+            </div>
           </div>
           <div class="footer__contact-form-box">
-            <label for="email">email</label>
-            <input type="email" id="email">
+            <label class="label" for="email">email</label>
+            <input class="input" type="email" id="email">
+            <p class="error-info">error</p>
+            <div class="error-ico">
+              <div class="error-ico-sign"></div>
+            </div>
           </div>
           <div class="footer__contact-form-box">
-            <label for="msg">message</label>
-            <textarea id="msg" cols="30" rows="10"></textarea>
+            <label class="label" for="msg">message</label>
+            <textarea class="textarea" id="msg" cols="30" rows="10"></textarea>
+            <p class="error-info">error</p>
+            <div class="error-ico">
+              <div class="error-ico-sign"></div>
+            </div>
           </div>
           <button type="submit" data-text="send message">send message</button>
         </form>
       </div>
     </section>
+
     <div class="wrapper">
       <div class="line"></div>
     </div>
+
     <section class="footer__socials">
       <div class="wrapper">
-        <h2 class="footer__socials-heading">adamkeyes</h2>
+        <h2 class="footer__socials-heading">
+          adamkeyes</h2>
         <div class="footer__socials-box">
           <a href="#" aria-label="GitHub profile" class="footer__socials-box-link"><img
               src="./dist/img/icons/icon-github.svg" alt="">
@@ -142,6 +158,10 @@
       </div>
     </section>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="./dist/js/aossettings.min.js"></script>
   <script type="module" src="./dist/js/main.min.js"></script>
 </body>
 

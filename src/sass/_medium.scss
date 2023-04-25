@@ -1,4 +1,9 @@
 @media (min-width: 768px) {
+	.paragraph-styles {
+		font-size: 1.8rem;
+		line-height: 2.8rem;
+	}
+
 	.nav {
 		padding: 1.8em 2em;
 
@@ -72,8 +77,6 @@
 			&-text {
 				margin: 3.7em 0 1.9em;
 				max-width: 44.5rem;
-				font-size: 1.8rem;
-				line-height: 2.8rem;
 			}
 		}
 	}
@@ -157,11 +160,6 @@
 
 				&-title {
 					font-size: 7.2rem;
-				}
-
-				&-text {
-					font-size: 1.8rem;
-					line-height: 28px;
 				}
 			}
 

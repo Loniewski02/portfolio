@@ -10,3 +10,54 @@
 	height: 1px;
 	background-color: $white;
 }
+
+.error-info {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	transform: translate(110%, 102%);
+	font-size: 1.4rem;
+	color: $error-color;
+	transition: transform 0.3s;
+}
+
+.error-ico {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translate(110%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2px;
+	width: 24px;
+	height: 24px;
+	border: 1px solid $error-color;
+	border-radius: 50%;
+
+	&-sign {
+		margin: -2px 0 2px;
+		transform: rotate(90deg);
+		width: 8px;
+		height: 2px;
+		border-radius: 1em;
+		background-color: $error-color;
+
+		&::before {
+			content: '';
+			position: absolute;
+			transform: translateX(500%);
+			width: 2px;
+			height: 2px;
+			border-radius: 50%;
+			background-color: $error-color;
+		}
+	}
+}
+
+.paragraph-styles {
+	font-size: 1.6rem;
+	color: $light-gray;
+	line-height: 2.6rem;
+}
