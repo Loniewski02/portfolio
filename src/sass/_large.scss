@@ -68,6 +68,7 @@
 	}
 
 	.projects {
+		padding-bottom: 8.8em;
 		&__heading {
 			margin-bottom: 5em;
 
@@ -138,7 +139,6 @@
 
 	.footer {
 		padding: 5.2em 2em 5.8em;
-		background-position: -15vw 58%;
 
 		&__contact {
 			padding-bottom: 5.8em;
@@ -150,7 +150,7 @@
 			}
 
 			&-hero {
-				transform: translate(-70%, 60%);
+				transform: translate(-70%, 50%);
 			}
 
 			&-info {
@@ -159,6 +159,7 @@
 
 				&-title {
 					font-size: 8.8rem;
+					margin-bottom: 3.6rem;
 				}
 			}
 		}
