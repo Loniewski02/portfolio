@@ -14,11 +14,15 @@
 .error-info {
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: -0.8em;
 	transform: translate(110%, 102%);
 	font-size: 1.4rem;
 	color: $error-color;
 	transition: transform 0.3s;
+
+	&::first-letter {
+		text-transform: uppercase;
+	}
 }
 
 .error-ico {

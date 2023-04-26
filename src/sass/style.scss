@@ -1,6 +1,7 @@
 @use './colors' as *;
 @import './components';
 @import './mixins';
+@import './animations';
 
 *,
 *::before,
@@ -300,12 +301,11 @@ body {
 			&-box {
 				position: relative;
 
-				&--active {
+				&--active,
+				&--succes {
 					.label {
-						bottom: 0;
-						transform: translateY(50%);
+						animation: labelAnimation 0.5s forwards;
 						color: $green;
-						opacity: 1;
 					}
 
 					.input,
@@ -322,18 +322,21 @@ body {
 				&--error {
 					.error-info {
 						transform: translate(0%, 102%);
+						visibility: visible;
 					}
 
 					.error-ico {
 						transform: translate(0, -50%);
+						visibility: visible;
+					}
+
+					.error-ico.shake {
 						animation: shake 0.5s;
 					}
 
 					.label {
-						bottom: 0;
-						transform: translateY(50%);
+						animation: labelAnimation 0.5s forwards;
 						color: $error-color;
-						opacity: 1;
 					}
 
 					.input,
@@ -352,6 +355,7 @@ body {
 				text-transform: uppercase;
 				background-color: $dark-gray;
 				opacity: 0.5;
+				transition: position 0.3s;
 			}
 
 			input,
@@ -362,9 +366,24 @@ body {
 				color: $white;
 				font-size: 1.6rem;
 				background: transparent;
-				border: none;
+				border: 1px solid transparent;
 				border-bottom: 1px solid $white;
 				width: 100%;
+
+				&:focus {
+					outline: none;
+					background-color: transparent;
+				}
+
+				&:-webkit-autofill,
+				&:-webkit-autofill:hover,
+				&:-webkit-autofill:focus {
+					border-left: 1px solid $dark-gray;
+					border-top: 1px solid $dark-gray;
+					border-right: 1px solid $dark-gray;
+					-webkit-text-fill-color: $white;
+					-webkit-box-shadow: 0 0 0px 1000px $dark-gray inset;
+				}
 			}
 
 			textarea {
@@ -405,32 +424,3 @@ body {
 @import './small';
 @import './medium';
 @import './large';
-
-@keyframes shake {
-	0% {
-		right: 5px;
-		box-shadow: 0;
-	}
-	10% {
-		right: 10px;
-	}
-	30% {
-		right: 5px;
-	}
-	40% {
-		right: 10px;
-	}
-	60% {
-		right: 5px;
-	}
-	70% {
-		right: 10px;
-	}
-	80% {
-		right: 5px;
-	}
-	100% {
-		right: 0px;
-		box-shadow: 0 0 2px 2px $error-color;
-	}
-}

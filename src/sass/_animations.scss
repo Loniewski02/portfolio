@@ -1,0 +1,51 @@
+@keyframes socialAnimation {
+	from {
+		filter: none;
+	}
+	to {
+		filter: brightness(0) saturate(100%) invert(80%) sepia(26%) saturate(1050%) hue-rotate(96deg) brightness(94%)
+			contrast(86%);
+	}
+}
+
+@keyframes labelAnimation {
+	from {
+		bottom: 70%;
+		opacity: 0.5;
+		color: $white;
+	}
+	to {
+		bottom: 0;
+		transform: translateY(50%);
+		opacity: 1;
+	}
+}
+
+@keyframes shake {
+	0% {
+		right: 5px;
+		box-shadow: 0;
+	}
+	10% {
+		right: 10px;
+	}
+	30% {
+		right: 5px;
+	}
+	40% {
+		right: 10px;
+	}
+	60% {
+		right: 5px;
+	}
+	70% {
+		right: 10px;
+	}
+	80% {
+		right: 5px;
+	}
+	100% {
+		right: 0px;
+		box-shadow: 0 0 2px 2px $error-color;
+	}
+}
