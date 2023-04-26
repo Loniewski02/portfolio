@@ -1,49 +1,120 @@
 [
 	{
-		"pathLarge": "dist/img/project-1-large.webp",
-		"pathSmall": "dist/img/project-1-small.webp",
-		"title": "design portfolio",
+		"imgPath": "dist/img/projects/project-1.webp",
+		"title": "QR code component",
+		"builtWith": "html css",
+		"live": "https://loniewski02.github.io/FM-QR-code-v2/",
+		"code": "https://github.com/Loniewski02/FM-QR-code-v2"
+	},
+	{
+		"imgPath": "dist/img/projects/project-2.webp",
+		"title": "Results summary component",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-3.webp",
+		"title": "News homepage",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-4.webp",
+		"title": "Interactive card details form",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-5.webp",
+		"title": "Age calculator app",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-6.webp",
+		"title": "Fylo data storage component",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-7.webp",
+		"title": "Loopstudios landing page",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-8.webp",
+		"title": "Maker pre-launch landing page",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-9.webp",
+		"title": "Single-page design portfolio",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-10.webp",
+		"title": "Notifications page",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-11.webp",
+		"title": "GitHub user search app",
+		"builtWith": "html css javaScript api",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-12.webp",
+		"title": "Advice generator app",
+		"builtWith": "html css javaScript api",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-13.webp",
+		"title": "Sunnyside agency landing page",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-14.webp",
+		"title": "NFT preview card component",
 		"builtWith": "html css",
 		"live": "#",
 		"code": "#"
 	},
 	{
-		"pathLarge": "dist/img/project-2-large.webp",
-		"pathSmall": "dist/img/project-2-small.webp",
-		"title": "e-learning landing page",
+		"imgPath": "dist/img/projects/project-15.webp",
+		"title": "Password generator app",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-16.webp",
+		"title": "Calculator app",
+		"builtWith": "html css javaScript",
+		"live": "#",
+		"code": "#"
+	},
+	{
+		"imgPath": "dist/img/projects/project-17.webp",
+		"title": "Order summary component",
 		"builtWith": "html css",
-		"live": "#",
-		"code": "#"
-	},
-	{
-		"pathLarge": "dist/img/project-3-large.webp",
-		"pathSmall": "dist/img/project-3-small.webp",
-		"title": "todo web app",
-		"builtWith": "html css javascript",
-		"live": "#",
-		"code": "#"
-	},
-	{
-		"pathLarge": "dist/img/project-4-large.webp",
-		"pathSmall": "dist/img/project-4-small.webp",
-		"title": "entertainment web app",
-		"builtWith": "html css javascript",
-		"live": "#",
-		"code": "#"
-	},
-	{
-		"pathLarge": "dist/img/project-5-large.webp",
-		"pathSmall": "dist/img/project-5-small.webp",
-		"title": "memory game",
-		"builtWith": "html css javascript",
-		"live": "#",
-		"code": "#"
-	},
-	{
-		"pathLarge": "dist/img/project-6-large.webp",
-		"pathSmall": "dist/img/project-6-small.webp",
-		"title": "art gallery showcase",
-		"builtWith": "html css javascript",
 		"live": "#",
 		"code": "#"
 	}

@@ -79,6 +79,7 @@
 		}
 
 		&__boxes {
+			grid-template-columns: 1fr 1fr;
 			row-gap: 7.5rem;
 		}
 
@@ -100,7 +101,6 @@
 
 				img {
 					height: 100%;
-					cursor: pointer;
 				}
 
 				&-links {
@@ -117,7 +117,6 @@
 					gap: 3em;
 					background-color: rgba(0, 0, 0, 0.75);
 					transition: height 0.5s;
-					cursor: pointer;
 				}
 
 				&-link {
@@ -174,7 +173,7 @@
 	.nav {
 		&__box-link {
 			&:last-child {
-				padding-right: 2em;
+				margin-right: 2em;
 			}
 		}
 	}
