@@ -8,16 +8,20 @@
 	text-transform: uppercase;
 	letter-spacing: 2.3px;
 	background-color: transparent;
+	border-bottom: 3px solid $green;
 	cursor: pointer;
 
 	&::after {
 		content: '';
 		position: absolute;
-		bottom: 0;
+		bottom: -3px;
 		left: 0;
-		right: 0;
-		height: 2px;
-		background-color: $green;
+		width: 10%;
+		height: 3px;
+		background-color: #ffffff;
+		animation: borderAnimation 1s infinite alternate;
+		z-index: 3;
+		transition: opacity 0.3s;
 	}
 
 	&::before {
@@ -32,16 +36,17 @@
 		overflow: hidden;
 	}
 
-	&:hover::before {
+	&:hover::after {
+		opacity: 0;
+	}
+
+	&:hover::before,
+	&:focus::before {
 		height: 100%;
 	}
 
 	&:focus {
 		outline: none;
-	}
-
-	&:focus::before {
-		height: 100%;
 	}
 }
 
@@ -74,9 +79,6 @@
 
 		&::before {
 			left: 50%;
-		}
-
-		&::before {
 		}
 
 		&:hover {

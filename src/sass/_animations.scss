@@ -49,3 +49,17 @@
 		box-shadow: 0 0 2px 2px $error-color;
 	}
 }
+
+
+@keyframes borderAnimation {
+	0% {
+		left: 0;
+		width: 10%;
+	}
+	50% {
+		width: 15%;
+	}
+	100% {
+		left: 90%;
+	}
+}

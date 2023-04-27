@@ -4,6 +4,7 @@ const emailInput = form.querySelector('#email');
 const msgTextarea = form.querySelector('#msg');
 const allInputs = form.querySelectorAll('input, textarea');
 const sendBtn = document.querySelector('.send-btn');
+const backBtn = document.querySelector('.back-btn');
 
 const projectsBoxes = document.querySelector('.projects__boxes');
 let aosPosition;
@@ -133,17 +134,39 @@ const contactMain = () => {
 	checkErrors();
 };
 
+const handleBackBtn = () => {
+	if (window.scrollY > 600) {
+		backBtn.style.display = 'block';
+	} else {
+		backBtn.style.display = 'none';
+	}
+};
+
+window.addEventListener('scroll', handleBackBtn);
+
 sendBtn.addEventListener('click', contactMain);
 
 nameInput.addEventListener('keyup', e => {
 	if (e.key === 'Enter') {
-		checkName(nameInput, 3);
+		checkName(nameInput);
+	}
+});
+
+emailInput.addEventListener('keyup', e => {
+	if (e.key === 'Enter') {
+		checkMail(emailInput);
+	}
+});
+
+msgTextarea.addEventListener('keyup', e => {
+	if (e.key === 'Enter') {
+		checkLength(msgTextarea);
 	}
 });
 
 nameInput.addEventListener('blur', e => {
 	if (e.target.value !== '') {
-		checkName(nameInput, 3);
+		checkName(nameInput);
 	} else {
 		e.target.parentElement.classList.remove('footer__contact-form-box--error');
 		e.target.parentElement.classList.remove('footer__contact-form-box--succes');
@@ -165,12 +188,6 @@ msgTextarea.addEventListener('blur', e => {
 	} else {
 		e.target.parentElement.classList.remove('footer__contact-form-box--error');
 		e.target.parentElement.classList.remove('footer__contact-form-box--succes');
-	}
-});
-
-emailInput.addEventListener('keyup', e => {
-	if (e.key === 'Enter') {
-		checkMail(emailInput);
 	}
 });
 

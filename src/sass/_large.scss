@@ -37,7 +37,8 @@
 
 			&-title {
 				span {
-					&::after {
+					&::after,
+					&:before {
 						bottom: 4px;
 						height: 6px;
 					}

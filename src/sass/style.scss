@@ -130,6 +130,20 @@ body {
 					right: 0;
 					height: 4px;
 					background-color: $green;
+					z-index: 2;
+				}
+
+				&::before {
+					content: '';
+					position: absolute;
+					bottom: 2px;
+					left: 0;
+					width: 10%;
+					height: 4px;
+					background-color: #ffffff;
+					opacity: 0.8;
+					animation: borderAnimation 1s infinite alternate;
+					z-index: 3;
 				}
 			}
 		}
