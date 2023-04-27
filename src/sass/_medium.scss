@@ -5,27 +5,7 @@
 	}
 
 	.nav {
-		padding: 1.8em 2em;
-
-		.wrapper {
-			flex-direction: row;
-			justify-content: space-between;
-		}
-
-		&__heading {
-			font-size: 3.2rem;
-		}
-
-		&__box {
-			margin-top: 0;
-			gap: 2em;
-
-			&-link {
-				img {
-					width: 24px;
-				}
-			}
-		}
+		padding: 2em;
 	}
 
 	.header {
@@ -64,10 +44,11 @@
 		}
 
 		&__info {
+			align-items: flex-start;
 			margin-bottom: 1.2em;
 			padding: 0;
 			text-align: left;
-			max-width: 44.5rem;
+			max-width: 52rem;
 
 			&-title {
 				font-size: 7.2rem;

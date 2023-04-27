@@ -1,5 +1,6 @@
 @mixin linkStyles {
 	position: relative;
+	display: inline-block;
 	padding-bottom: 0.8em;
 	font-size: 1.6rem;
 	color: $white;
@@ -18,9 +19,10 @@
 		left: 0;
 		width: 10%;
 		height: 3px;
-		background-color: #ffffff;
+		background-color: $white;
 		animation: borderAnimation 1s infinite alternate;
 		z-index: 3;
+		opacity: 0.8;
 		transition: opacity 0.3s;
 	}
 

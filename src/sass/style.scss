@@ -48,7 +48,7 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 1.3em 0 2em;
+	padding: 1.3em 1em 2em;
 	background-color: transparent;
 	z-index: 10;
 
@@ -121,6 +121,7 @@ body {
 
 			span {
 				position: relative;
+				display: inline-block;
 
 				&::after {
 					content: '';
