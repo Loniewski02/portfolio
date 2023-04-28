@@ -7,8 +7,8 @@
 
 .back-btn {
 	position: fixed;
-	bottom: 2em;
-	right: 2em;
+	bottom: 1em;
+	right: 1em;
 	display: none;
 	padding: 1em;
 	width: 24px;
@@ -23,7 +23,7 @@
 		content: '';
 		position: absolute;
 		top: 40%;
-		left: 10%;
+		left: 13%;
 		transform: rotate(135deg);
 		width: 15px;
 		height: 3px;
@@ -34,7 +34,7 @@
 		content: '';
 		position: absolute;
 		top: 40%;
-		right: 10%;
+		right: 13%;
 		transform: rotate(45deg);
 		width: 15px;
 		height: 3px;

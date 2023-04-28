@@ -10,15 +10,15 @@
 		"imgPath": "dist/img/projects/project-2.webp",
 		"title": "Results summary component",
 		"builtWith": "html css javaScript",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/results-summary-component/",
+		"code": "https://github.com/Loniewski02/results-summary-component"
 	},
 	{
 		"imgPath": "dist/img/projects/project-3.webp",
 		"title": "News homepage",
 		"builtWith": "html css javaScript",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/HTML-CSS-JS-News-homepage/",
+		"code": "https://github.com/Loniewski02/HTML-CSS-JS-News-homepage"
 	},
 	{
 		"imgPath": "dist/img/projects/project-4.webp",

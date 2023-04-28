@@ -28,28 +28,31 @@
 	}
 	10% {
 		right: 10px;
+		box-shadow: 0 0 2px 1px $error-color;
 	}
 	30% {
 		right: 5px;
 	}
 	40% {
 		right: 10px;
+		box-shadow: 0 0 2px 2px $error-color;
 	}
 	60% {
 		right: 5px;
+		box-shadow: 0 0 2px 2px $error-color;
 	}
 	70% {
 		right: 10px;
 	}
 	80% {
 		right: 5px;
+		box-shadow: 0 0 2px 1px $error-color;
 	}
 	100% {
 		right: 0px;
-		box-shadow: 0 0 2px 2px $error-color;
+		box-shadow: none;
 	}
 }
-
 
 @keyframes borderAnimation {
 	0% {

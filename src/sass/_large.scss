@@ -1,4 +1,8 @@
 @media (min-width: 992px) {
+	.back-btn {
+		bottom: 2em;
+	}
+
 	.nav {
 		padding: 2.5em 2em;
 	}
@@ -27,15 +31,15 @@
 			&-profile {
 				width: auto;
 				max-width: 445px;
-				content: url('../img/image-profile-desktop.webp');
+				content: url('../img/profile-picture-large.png');
 			}
 		}
 
 		&__info {
-			margin-bottom: 0em;
 			max-width: 600px;
 
 			&-title {
+				font-size: 8rem;
 				span {
 					&::after,
 					&:before {
