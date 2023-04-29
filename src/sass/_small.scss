@@ -1,5 +1,3 @@
-@media (min-width: 375px) {
-}
 @media (min-width: 576px) {
 	.nav {
 		padding: 2em 1em;
@@ -55,6 +53,28 @@
 			&-text {
 				font-size: 1.8rem;
 				max-width: 70%;
+			}
+		}
+	}
+
+	.skills {
+		.line--bottom {
+			display: none;
+		}
+
+		&__boxes {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			column-gap: 0;
+			row-gap: 3.4em;
+		}
+
+		&__box {
+			width: 50%;
+
+			&-name {
+				font-size: 3.6rem;
 			}
 		}
 	}

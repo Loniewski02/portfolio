@@ -79,17 +79,11 @@
 		}
 
 		&__boxes {
-			flex-direction: row;
-			flex-wrap: wrap;
 			justify-content: space-between;
-			column-gap: 0;
-			row-gap: 3.4em;
-			padding: 5.2rem 0 0;
 		}
 
 		&__box {
 			text-align: left;
-			width: 50%;
 
 			&-name {
 				font-size: 4.8rem;

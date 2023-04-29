@@ -17,8 +17,8 @@
 		"imgPath": "dist/img/projects/project-3.webp",
 		"title": "News homepage",
 		"builtWith": "html css javaScript",
-		"live": "https://loniewski02.github.io/HTML-CSS-JS-News-homepage/",
-		"code": "https://github.com/Loniewski02/HTML-CSS-JS-News-homepage"
+		"live": "https://loniewski02.github.io/FM-NewsHomepage/",
+		"code": "https://github.com/Loniewski02/FM-NewsHomepage"
 	},
 	{
 		"imgPath": "dist/img/projects/project-4.webp",
@@ -38,8 +38,8 @@
 		"imgPath": "dist/img/projects/project-6.webp",
 		"title": "Fylo data storage component",
 		"builtWith": "html css javaScript",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-data-storage-component/",
+		"code": "https://github.com/Loniewski02/FM-data-storage-component"
 	},
 	{
 		"imgPath": "dist/img/projects/project-7.webp",
@@ -94,22 +94,22 @@
 		"imgPath": "dist/img/projects/project-14.webp",
 		"title": "NFT preview card component",
 		"builtWith": "html css",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-nft-card/",
+		"code": "https://github.com/Loniewski02/FM-nft-card"
 	},
 	{
 		"imgPath": "dist/img/projects/project-15.webp",
 		"title": "Password generator app",
 		"builtWith": "html css javaScript",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-password-generator-app/",
+		"code": "https://github.com/Loniewski02/FM-password-generator-app"
 	},
 	{
 		"imgPath": "dist/img/projects/project-16.webp",
 		"title": "Calculator app",
 		"builtWith": "html css javaScript",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-calculator-app/",
+		"code": "https://github.com/Loniewski02/FM-calculator-app"
 	},
 	{
 		"imgPath": "dist/img/projects/project-17.webp",
