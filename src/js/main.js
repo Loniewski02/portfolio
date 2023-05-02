@@ -14,7 +14,11 @@ const reLetters = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ\s]*$/;
 
 async function handleData() {
 	const response = await axios.get(URL);
-	createProjects(response.data);
+	try {
+		createProjects(response.data);
+	} catch (error) {
+		console.error(error);
+	}
 }
 
 const createProjects = data => {

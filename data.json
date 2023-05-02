@@ -73,15 +73,15 @@
 		"imgPath": "dist/img/projects/project-11.webp",
 		"title": "GitHub user search app",
 		"builtWith": "html css javaScript api",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-github-user-search-app/",
+		"code": "https://github.com/Loniewski02/FM-github-user-search-app"
 	},
 	{
 		"imgPath": "dist/img/projects/project-12.webp",
 		"title": "Advice generator app",
 		"builtWith": "html css javaScript api",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-Advice-generator/",
+		"code": "https://github.com/Loniewski02/FM-Advice-generator"
 	},
 	{
 		"imgPath": "dist/img/projects/project-13.webp",
