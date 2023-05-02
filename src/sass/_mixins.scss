@@ -1,8 +1,10 @@
-@mixin linkStyles {
+@use './colors' as *;
+
+@mixin linkStyles($font) {
 	position: relative;
 	display: inline-block;
 	padding-bottom: 0.8em;
-	font-size: 1.6rem;
+	font-size: $font;
 	color: $white;
 	font-weight: bold;
 	text-decoration: none;
@@ -38,7 +40,8 @@
 		overflow: hidden;
 	}
 
-	&:hover::after {
+	&:hover::after,
+	&:focus::after {
 		opacity: 0;
 	}
 

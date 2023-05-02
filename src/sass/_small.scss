@@ -1,3 +1,42 @@
+@media (min-width: 375px) {
+	.header {
+		&__info {
+			&-link {
+				@include linkStyles(1.6rem);
+			}
+		}
+	}
+
+	.projects {
+		&__heading {
+			&-title {
+				font-size: 4rem;
+			}
+
+			&-link {
+				@include linkStyles(1.6rem);
+			}
+		}
+
+		&__box {
+			&-link {
+				@include linkStyles(1.6rem);
+			}
+		}
+	}
+
+	.footer {
+		&__contact {
+
+			&-form {
+				button {
+					@include linkStyles(1.6rem);
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 576px) {
 	.nav {
 		padding: 2em 1em;

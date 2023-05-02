@@ -125,7 +125,8 @@ const checkErrors = () => {
 	if (errorCount === 0) {
 		allInputs.forEach(input => {
 			input.value = '';
-			clearError(input);
+			input.parentElement.classList.remove('footer__contact-form-box--error');
+			input.parentElement.classList.remove('footer__contact-form-box--succes');
 		});
 	}
 };

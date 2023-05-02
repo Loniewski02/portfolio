@@ -1,6 +1,6 @@
 @use './colors' as *;
+@use './mixins' as *;
 @import './components';
-@import './mixins';
 @import './animations';
 
 *,
@@ -154,7 +154,7 @@ body {
 		}
 
 		&-link {
-			@include linkStyles;
+			@include linkStyles(1.3rem);
 		}
 	}
 }
@@ -209,13 +209,13 @@ body {
 
 		&-title {
 			color: $white;
-			font-size: 4rem;
+			font-size: 3.2rem;
 			letter-spacing: -1px;
 			line-height: 1em;
 		}
 
 		&-link {
-			@include linkStyles;
+			@include linkStyles(1.3rem);
 		}
 	}
 
@@ -280,7 +280,7 @@ body {
 		}
 
 		&-link {
-			@include linkStyles;
+			@include linkStyles(1.3rem);
 
 			&--first {
 				margin-right: 2em;
@@ -428,7 +428,7 @@ body {
 				margin-top: 1rem;
 				max-width: max-content;
 				border: none;
-				@include linkStyles;
+				@include linkStyles(1.3rem);
 				justify-self: end;
 			}
 		}

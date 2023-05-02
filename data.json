@@ -45,29 +45,29 @@
 		"imgPath": "dist/img/projects/project-7.webp",
 		"title": "Loopstudios landing page",
 		"builtWith": "html css javaScript",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-loopstudios-landing-page/",
+		"code": "https://github.com/Loniewski02/FM-loopstudios-landing-page"
 	},
 	{
 		"imgPath": "dist/img/projects/project-8.webp",
 		"title": "Maker pre-launch landing page",
 		"builtWith": "html css javaScript",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-maker-landing-page/",
+		"code": "https://github.com/Loniewski02/FM-maker-landing-page"
 	},
 	{
 		"imgPath": "dist/img/projects/project-9.webp",
 		"title": "Single-page design portfolio",
 		"builtWith": "html css javaScript",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-single-page-portfolio/",
+		"code": "https://github.com/Loniewski02/FM-single-page-portfolio"
 	},
 	{
 		"imgPath": "dist/img/projects/project-10.webp",
 		"title": "Notifications page",
 		"builtWith": "html css javaScript",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-notifications-page/",
+		"code": "https://github.com/Loniewski02/FM-notifications-page"
 	},
 	{
 		"imgPath": "dist/img/projects/project-11.webp",
@@ -87,8 +87,8 @@
 		"imgPath": "dist/img/projects/project-13.webp",
 		"title": "Sunnyside agency landing page",
 		"builtWith": "html css javaScript",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-sunnyside-agency/",
+		"code": "https://github.com/Loniewski02/FM-sunnyside-agency"
 	},
 	{
 		"imgPath": "dist/img/projects/project-14.webp",
@@ -115,7 +115,7 @@
 		"imgPath": "dist/img/projects/project-17.webp",
 		"title": "Order summary component",
 		"builtWith": "html css",
-		"live": "#",
-		"code": "#"
+		"live": "https://loniewski02.github.io/FM-order-summery-component/",
+		"code": "https://github.com/Loniewski02/FM-order-summery-component"
 	}
 ]

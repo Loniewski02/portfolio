@@ -125,7 +125,7 @@
 				}
 
 				&-link {
-					@include linkStyles;
+					@include linkStyles(1.6rem);
 					transition: opacity 0.3s;
 					opacity: 0;
 				}
