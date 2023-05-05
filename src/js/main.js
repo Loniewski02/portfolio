@@ -39,18 +39,23 @@ const prepareDOMEvents = () => {
 		e.preventDefault();
 		contactMain();
 	});
+
 	handleKeyup(nameInput, checkName);
 	handleKeyup(emailInput, checkMail);
 	handleKeyup(msgTextarea, checkLength);
+
 	nameInput.addEventListener('blur', () => {
 		handleInputBlur(nameInput, checkName);
 	});
+
 	emailInput.addEventListener('blur', () => {
 		handleInputBlur(emailInput, checkMail);
 	});
+
 	msgTextarea.addEventListener('blur', () => {
 		handleInputBlur(msgTextarea, input => checkLength(input, 20));
 	});
+
 	allInputs.forEach(el => {
 		el.addEventListener('focus', e => {
 			let parent = el.parentElement;
@@ -83,11 +88,11 @@ function sendEmail() {
 		.then(
 			function (response) {
 				console.log(response);
-				alert('Wiadomość została wysłana.');
+				alert('The message was sent.');
 			},
 			function (error) {
 				console.error(error);
-				alert('Przepraszamy, wystąpił błąd podczas wysyłania wiadomości.');
+				alert('Sorry, there was an error while sending the message.');
 			}
 		);
 }
