@@ -1,16 +1,96 @@
-const form = document.querySelector('.footer__contact-form');
-const nameInput = form.querySelector('#name');
-const emailInput = form.querySelector('#email');
-const msgTextarea = form.querySelector('#msg');
-const allInputs = form.querySelectorAll('input, textarea');
-const sendBtn = document.querySelector('.send-btn');
-const backBtn = document.querySelector('.back-btn');
+let form;
+let nameInput;
+let emailInput;
+let msgTextarea;
+let allInputs;
+let sendBtn;
+let backBtn;
 
 const projectsBoxes = document.querySelector('.projects__boxes');
 let aosPosition;
 const URL = 'data.json';
-const regMail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 const reLetters = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ\s]*$/;
+
+const emailjsConfig = {
+	service_id: 'service_18oof3o',
+	template_id: 'template_cnc9mcc',
+	user_id: 'rwtceOKfbHrv4W1Ff',
+};
+
+const main = () => {
+	prepareDOMElements();
+	prepareDOMEvents();
+	handleData();
+};
+
+const prepareDOMElements = () => {
+	form = document.querySelector('.footer__contact-form');
+	nameInput = form.querySelector('#name');
+	emailInput = form.querySelector('#email');
+	msgTextarea = form.querySelector('#msg');
+	allInputs = form.querySelectorAll('input, textarea');
+	sendBtn = document.querySelector('.send-btn');
+	backBtn = document.querySelector('.back-btn');
+};
+
+const prepareDOMEvents = () => {
+	window.addEventListener('scroll', handleBackBtn);
+	sendBtn.addEventListener('click', e => {
+		e.preventDefault();
+		contactMain();
+	});
+	handleKeyup(nameInput, checkName);
+	handleKeyup(emailInput, checkMail);
+	handleKeyup(msgTextarea, checkLength);
+	nameInput.addEventListener('blur', () => {
+		handleInputBlur(nameInput, checkName);
+	});
+	emailInput.addEventListener('blur', () => {
+		handleInputBlur(emailInput, checkMail);
+	});
+	msgTextarea.addEventListener('blur', () => {
+		handleInputBlur(msgTextarea, input => checkLength(input, 20));
+	});
+	allInputs.forEach(el => {
+		el.addEventListener('focus', e => {
+			let parent = el.parentElement;
+			parent.classList.add('footer__contact-form-box--active');
+		});
+
+		el.addEventListener('blur', e => {
+			let parent = el.parentElement;
+			parent.classList.remove('footer__contact-form-box--active');
+		});
+	});
+};
+
+function sendEmail() {
+	const name = nameInput.value;
+	const email = emailInput.value;
+	const message = msgTextarea.value;
+
+	emailjs
+		.send(
+			emailjsConfig.service_id,
+			emailjsConfig.template_id,
+			{
+				from_name: name,
+				from_email: email,
+				message: message,
+			},
+			emailjsConfig.user_id
+		)
+		.then(
+			function (response) {
+				console.log(response);
+				alert('Wiadomość została wysłana.');
+			},
+			function (error) {
+				console.error(error);
+				alert('Przepraszamy, wystąpił błąd podczas wysyłania wiadomości.');
+			}
+		);
+}
 
 async function handleData() {
 	const response = await axios.get(URL);
@@ -48,8 +128,6 @@ const createProjects = data => {
 	}
 };
 
-handleData();
-
 const showError = (input, msg) => {
 	const formBox = input.parentElement;
 	const errorIco = formBox.querySelector('.error-ico');
@@ -82,6 +160,10 @@ const checkForm = input => {
 const checkLength = (input, min) => {
 	if (input.value.length < min && input.value.length > 0) {
 		showError(input, `${input.previousElementSibling.textContent} should consist of at least ${min} characters`);
+	} else if (input.value.length < 1) {
+		showError(input, `can't be blank`);
+	} else {
+		clearError(input);
 	}
 };
 
@@ -123,6 +205,8 @@ const checkErrors = () => {
 	});
 
 	if (errorCount === 0) {
+		sendEmail();
+
 		allInputs.forEach(input => {
 			input.value = '';
 			input.parentElement.classList.remove('footer__contact-form-box--error');
@@ -147,63 +231,21 @@ const handleBackBtn = () => {
 	}
 };
 
-window.addEventListener('scroll', handleBackBtn);
-
-sendBtn.addEventListener('click', contactMain);
-
-nameInput.addEventListener('keyup', e => {
-	if (e.key === 'Enter') {
-		checkName(nameInput);
-	}
-});
-
-emailInput.addEventListener('keyup', e => {
-	if (e.key === 'Enter') {
-		checkMail(emailInput);
-	}
-});
-
-msgTextarea.addEventListener('keyup', e => {
-	if (e.key === 'Enter') {
-		checkLength(msgTextarea);
-	}
-});
-
-nameInput.addEventListener('blur', e => {
-	if (e.target.value !== '') {
-		checkName(nameInput);
-	} else {
-		e.target.parentElement.classList.remove('footer__contact-form-box--error');
-		e.target.parentElement.classList.remove('footer__contact-form-box--succes');
-	}
-});
-
-emailInput.addEventListener('blur', e => {
-	if (e.target.value !== '') {
-		checkMail(emailInput);
-	} else {
-		e.target.parentElement.classList.remove('footer__contact-form-box--error');
-		e.target.parentElement.classList.remove('footer__contact-form-box--succes');
-	}
-});
-
-msgTextarea.addEventListener('blur', e => {
-	if (e.target.value !== '') {
-		checkLength(msgTextarea, 20);
-	} else {
-		e.target.parentElement.classList.remove('footer__contact-form-box--error');
-		e.target.parentElement.classList.remove('footer__contact-form-box--succes');
-	}
-});
-
-allInputs.forEach(el => {
-	el.addEventListener('focus', e => {
-		let parent = el.parentElement;
-		parent.classList.add('footer__contact-form-box--active');
+const handleKeyup = (field, validator) => {
+	field.addEventListener('keyup', e => {
+		if (e.key === 'Enter') {
+			validator(field);
+		}
 	});
+};
 
-	el.addEventListener('blur', e => {
-		let parent = el.parentElement;
-		parent.classList.remove('footer__contact-form-box--active');
-	});
-});
+const handleInputBlur = (inputElement, checkFunction) => {
+	if (inputElement.value !== '') {
+		checkFunction(inputElement);
+	} else {
+		inputElement.parentElement.classList.remove('footer__contact-form-box--error');
+		inputElement.parentElement.classList.remove('footer__contact-form-box--succes');
+	}
+};
+
+document.addEventListener('DOMContentLoaded', main);

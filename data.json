@@ -117,5 +117,12 @@
 		"builtWith": "html css",
 		"live": "https://loniewski02.github.io/FM-order-summery-component/",
 		"code": "https://github.com/Loniewski02/FM-order-summery-component"
+	},
+	{
+		"imgPath": "dist/img/projects/project-18.webp",
+		"title": "Launch countdown timer",
+		"builtWith": "html css javascript",
+		"live": "https://loniewski02.github.io/FM-countdown-timer/",
+		"code": "https://github.com/Loniewski02/FM-countdown-timer"
 	}
 ]

@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Hello, I'm Milosz, a computer science student with a strong interest in web design and development.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-
   <link rel="stylesheet" href="./dist/css/style.min.css">
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
@@ -44,7 +45,7 @@
       </div>
       <div class="header__info">
         <h1 class="header__info-title focus-in-expand">Nice to meet you! I'm <span>Milosz</span>.</h1>
-        <p class="header__info-text paragraph-styles focus-in-expand">Based in the UK, I'm a front-end developer
+        <p class="header__info-text paragraph-styles focus-in-expand">Based in the Poland, I'm a front-end developer
           passionate about
           building accessible web
           apps that users love.</p>
@@ -61,27 +62,43 @@
         <div class="skills__boxes">
           <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
             <h3 class="skills__box-name">HTML</h3>
-            <p class="skills__box-desc">4 Years Experience</p>
-          </div>
-          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
-            <h3 class="skills__box-name">CSS</h3>
-            <p class="skills__box-desc">4 Years Experience</p>
-          </div>
-          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
-            <h3 class="skills__box-name">Javascript</h3>
-            <p class="skills__box-desc">4 Years Experience</p>
-          </div>
-          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
-            <h3 class="skills__box-name">Accessibility</h3>
-            <p class="skills__box-desc">4 Years Experience</p>
-          </div>
-          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
-            <h3 class="skills__box-name">React</h3>
             <p class="skills__box-desc">3 Years Experience</p>
           </div>
-          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="600">
-            <h3 class="skills__box-name">Sass</h3>
-            <p class=" skills__box-desc">3 Years Experience</p>
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+            <h3 class="skills__box-name">CSS</h3>
+            <p class="skills__box-desc">3 Years Experience</p>
+          </div>
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+            <h3 class="skills__box-name">SASS</h3>
+            <p class="skills__box-desc">1.5 Years Experience</p>
+          </div>
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+            <h3 class="skills__box-name">Javascript</h3>
+            <p class="skills__box-desc">2 Years Experience</p>
+          </div>
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
+            <h3 class="skills__box-name">Accessibility</h3>
+            <p class="skills__box-desc">2 Years Experience</p>
+          </div>
+          <!-- <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
+            <h3 class="skills__box-name">React</h3>
+            <p class="skills__box-desc">0 Years Experience -_-</p>
+          </div> -->
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+            <h3 class="skills__box-name">Git</h3>
+            <p class=" skills__box-desc">Less than a year</p>
+          </div>
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+            <h3 class="skills__box-name">Bootstrap</h3>
+            <p class=" skills__box-desc">Less than a year</p>
+          </div>
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
+            <h3 class="skills__box-name">Gulp</h3>
+            <p class=" skills__box-desc">Less than a year</p>
+          </div>
+          <div class="skills__box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
+            <h3 class="skills__box-name">Figma</h3>
+            <p class=" skills__box-desc">Less than a year</p>
           </div>
         </div>
         <div class="line line--bottom"></div>
@@ -164,8 +181,14 @@
     </section>
   </footer>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("rwtceOKfbHrv4W1Ff");
+    })();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
   <script src="./dist/js/aossettings.min.js"></script>
