@@ -124,5 +124,12 @@
 		"builtWith": "html css javascript",
 		"live": "https://loniewski02.github.io/FM-countdown-timer/",
 		"code": "https://github.com/Loniewski02/FM-countdown-timer"
+	},
+	{
+		"imgPath": "dist/img/projects/project-19.webp",
+		"title": "Tic Tac Toe game",
+		"builtWith": "html css javascript",
+		"live": "https://loniewski02.github.io/FM-tic-tac-toe/",
+		"code": "https://github.com/Loniewski02/FM-tic-tac-toe"
 	}
 ]
