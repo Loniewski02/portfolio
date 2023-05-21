@@ -14,6 +14,13 @@
 		"code": "https://github.com/Loniewski02/FM-planets-fact"
 	},
 	{
+		"imgPath": "dist/img/projects/project-20.webp",
+		"title": "Planets fact site v2",
+		"builtWith": "html css javascript",
+		"live": "https://loniewski02.github.io/FM-planets-fact-v2/",
+		"code": "https://github.com/Loniewski02/FM-planets-fact-v2"
+	},
+	{
 		"imgPath": "dist/img/projects/project-1.webp",
 		"title": "QR code component",
 		"builtWith": "html css",
