@@ -21,6 +21,13 @@
 		"code": "https://github.com/Loniewski02/FM-planets-fact-v2"
 	},
 	{
+		"imgPath": "dist/img/projects/project-21.webp",
+		"title": "Dictionary web app",
+		"builtWith": "html css javascript api",
+		"live": "https://loniewski02.github.io/FM-dictionary-web-app/",
+		"code": "https://github.com/Loniewski02/FM-dictionary-web-app"
+	},
+	{
 		"imgPath": "dist/img/projects/project-1.webp",
 		"title": "QR code component",
 		"builtWith": "html css",
