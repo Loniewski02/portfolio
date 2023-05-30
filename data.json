@@ -28,6 +28,13 @@
 		"code": "https://github.com/Loniewski02/FM-dictionary-web-app"
 	},
 	{
+		"imgPath": "dist/img/projects/project-22.webp",
+		"title": "Clock app",
+		"builtWith": "html css javascript api",
+		"live": "https://loniewski02.github.io/FM-clock-app/",
+		"code": "https://github.com/Loniewski02/FM-clock-app"
+	},
+	{
 		"imgPath": "dist/img/projects/project-1.webp",
 		"title": "QR code component",
 		"builtWith": "html css",
