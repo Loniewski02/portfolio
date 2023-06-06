@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code](https://github.com/Loniewski02/portfolio)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/dev-portfolio-RQmWsEyilF)
 - Live Site URL: [Live](https://loniewski02.github.io/portfolio/)
 
 ## My process
