@@ -1,5 +1,19 @@
 [
 	{
+		"imgPath": "dist/img/projects/project-23.webp",
+		"title": "PayAPI | multi-page website",
+		"builtWith": "react react-router",
+		"live": "https://payapi-five.vercel.app/",
+		"code": "https://github.com/Loniewski02/FM-PayAPI-REACT"
+	},
+	{
+		"imgPath": "dist/img/projects/project-24.webp",
+		"title": "Link-sharing app",
+		"builtWith": "react react-router react-redux",
+		"live": "https://fm-link-sharing-app-react.vercel.app/",
+		"code": "https://github.com/Loniewski02/FM-LinkSharingApp-REACT"
+	},
+	{
 		"imgPath": "dist/img/projects/project-19.webp",
 		"title": "Tic Tac Toe game",
 		"builtWith": "html css javascript",
