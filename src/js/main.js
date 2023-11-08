@@ -12,9 +12,9 @@ const URL = 'data.json';
 const reLetters = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ\s]*$/;
 
 const emailjsConfig = {
-	service_id: 'service_18oof3o',
-	template_id: 'template_cnc9mcc',
-	user_id: 'rwtceOKfbHrv4W1Ff',
+	service_id: 'service_vu08gpp',
+	template_id: 'template_uehdt6a',
+	user_id: 'Ek5QONeNeJ6LOVnMo',
 };
 
 const main = () => {
@@ -35,7 +35,7 @@ const prepareDOMElements = () => {
 
 const prepareDOMEvents = () => {
 	window.addEventListener('scroll', handleBackBtn);
-	sendBtn.addEventListener('click', e => {
+	sendBtn.addEventListener('click', (e) => {
 		e.preventDefault();
 		contactMain();
 	});
@@ -53,16 +53,16 @@ const prepareDOMEvents = () => {
 	});
 
 	msgTextarea.addEventListener('blur', () => {
-		handleInputBlur(msgTextarea, input => checkLength(input, 20));
+		handleInputBlur(msgTextarea, (input) => checkLength(input, 20));
 	});
 
-	allInputs.forEach(el => {
-		el.addEventListener('focus', e => {
+	allInputs.forEach((el) => {
+		el.addEventListener('focus', (e) => {
 			let parent = el.parentElement;
 			parent.classList.add('footer__contact-form-box--active');
 		});
 
-		el.addEventListener('blur', e => {
+		el.addEventListener('blur', (e) => {
 			let parent = el.parentElement;
 			parent.classList.remove('footer__contact-form-box--active');
 		});
@@ -106,7 +106,7 @@ async function handleData() {
 	}
 }
 
-const createProjects = data => {
+const createProjects = (data) => {
 	for (let i = 0; i < data.length; i++) {
 		if (i % 2 == 0) {
 			aosPosition = 'right';
@@ -146,14 +146,14 @@ const showError = (input, msg) => {
 	}, 500);
 };
 
-const clearError = input => {
+const clearError = (input) => {
 	const formBox = input.parentElement;
 	formBox.classList.remove('footer__contact-form-box--error');
 	formBox.classList.add('footer__contact-form-box--succes');
 };
 
-const checkForm = input => {
-	input.forEach(el => {
+const checkForm = (input) => {
+	input.forEach((el) => {
 		if (el.value === '') {
 			showError(el, `can't be blank!`);
 		} else {
@@ -172,7 +172,7 @@ const checkLength = (input, min) => {
 	}
 };
 
-const checkName = input => {
+const checkName = (input) => {
 	if (input.value.length < 1) {
 		showError(input, `can't be blank`);
 	} else {
@@ -185,7 +185,7 @@ const checkName = input => {
 	}
 };
 
-const checkMail = input => {
+const checkMail = (input) => {
 	const re =
 		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,3}))$/;
 	if (input.value.length < 1) {
@@ -203,7 +203,7 @@ const checkErrors = () => {
 	const formBoxes = document.querySelectorAll('.footer__contact-form-box');
 	let errorCount = 0;
 
-	formBoxes.forEach(el => {
+	formBoxes.forEach((el) => {
 		if (el.classList.contains('footer__contact-form-box--error')) {
 			errorCount++;
 		}
@@ -212,7 +212,7 @@ const checkErrors = () => {
 	if (errorCount === 0) {
 		sendEmail();
 
-		allInputs.forEach(input => {
+		allInputs.forEach((input) => {
 			input.value = '';
 			input.parentElement.classList.remove('footer__contact-form-box--error');
 			input.parentElement.classList.remove('footer__contact-form-box--succes');
@@ -237,7 +237,7 @@ const handleBackBtn = () => {
 };
 
 const handleKeyup = (field, validator) => {
-	field.addEventListener('keyup', e => {
+	field.addEventListener('keyup', (e) => {
 		if (e.key === 'Enter') {
 			validator(field);
 		}
